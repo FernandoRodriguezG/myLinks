@@ -40,7 +40,9 @@ function App() {
             <p className='text-sm m-3'>
               23 años. Ingeniero en Sistemas Inteligentes por la UASLP con especialidad en desarrollo web y multiplataforma.
             </p>
-            <ul className='flex flex-col w-full'>
+            <div className='grid grid-cols-5'>
+
+            <ul className='flex flex-col w-full col-span-5 md:col-span-3 md:col-start-2'>
               {
                 links && links.map((link, index) => (
                   <li key={index} className='cursor-pointer m-2 py-3 px-10 border-white border-2 text-sm md:text-md text-slate-90'>
@@ -51,6 +53,7 @@ function App() {
                 ))
               }
             </ul>
+            </div>
           </div>
         }
         
